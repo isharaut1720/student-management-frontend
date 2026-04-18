@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System | Java Full Stack</title>
+
+    <!-- ✅ External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    Student Management System
+</header>
+
+<div class="container">
+
+    <!-- Add / Update Student -->
+    <div class="card">
+        <h3>Add / Update Student</h3>
+
+        <p id="message"></p>
+
+        <div class="form-group">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email Address">
+            <input type="text" id="course" placeholder="Course">
+            <input type="text" id="phone" placeholder="Phone Number">
+        </div>
+
+        <button id="submitBtn" onclick="addStudent()">Add Student</button>
+    </div>
+
+    <!-- Student List -->
+    <div class="card">
+        <h3>Student List</h3>
+
+        <!-- 🔍 Search Section -->
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search by name...">
+            <button onclick="searchStudent()">Search</button>
+            <button onclick="loadStudents()">Reset</button>
+        </div>
+
+        <!-- Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="studentTable"></tbody>
+        </table>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Student Management System | Developed by Isha Raut
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
